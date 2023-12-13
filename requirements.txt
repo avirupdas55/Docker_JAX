@@ -1,0 +1,7 @@
+gymnax
+evosax
+distrax
+optax
+flax
+brax
+seaborn>=0.11.2
