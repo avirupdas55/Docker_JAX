@@ -1,3 +1,9 @@
+rejax
+pandas
+numpy
+tensorboard
+wandb
+matplotlib
 gymnax
 evosax
 distrax

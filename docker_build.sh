@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Default values
-DOCKER_TAG="avirupdas55/jax:v1"
+DOCKER_TAG="avirupdas55/jax:v2"
 DOCKER_ID="avirupdas55"
 
 # Check if user provided tag name as argument
@@ -16,7 +16,7 @@ fi
 
 echo "Building Docker image with tag: $DOCKER_TAG"
 
-DOCKER_BUILDKIT=1 docker build -t $DOCKER_TAG .
+DOCKER_BUILDKIT=1 docker build --platform linux/amd64 -t $DOCKER_TAG .
 
 # Check if the user is already logged in to Docker Hub
 if ! docker info --format '{{.RegistryConfig.IndexConfigs}}' | grep -q "$DOCKER_ID"; then
