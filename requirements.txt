@@ -9,5 +9,5 @@ evosax
 distrax
 optax
 flax
-brax
+brax==0.10.4
 seaborn>=0.11.2
